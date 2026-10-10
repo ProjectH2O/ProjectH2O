@@ -1,0 +1,5 @@
+{
+  "TeknoParrotUI": { "repository": "ProjectH2O/TeknoParrotUI", "ref": "v1.0.0" },
+  "OpenParrot": { "repository": "ProjectH2O/OpenParrot", "ref": "v1.0.0" },
+  "H2ODashboard": { "repository": "ProjectH2O/H2ODashboard", "ref": "v1.0.0" }
+}
