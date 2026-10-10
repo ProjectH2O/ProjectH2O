@@ -57,6 +57,9 @@ Step 'OpenParrot'
 Push-Location $openParrot
 try {
     Invoke-Checked '.\premake5.exe' @('vs2019')
+    # Each project's post-build step runs "if not exist output mkdir output"; in a parallel (-m) build
+    # two projects can race on it and the second mkdir fails, so create the folder up front
+    New-Item -ItemType Directory -Force (Join-Path $openParrot 'build\bin\release\output') | Out-Null
     Invoke-Checked $msbuild @('OpenParrot.sln', '-p:Configuration=Release', '-p:Platform=Win32',
         "-p:PlatformToolset=$Toolset", '-m', '-v:minimal', '-nologo')
 } finally { Pop-Location }
