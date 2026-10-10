@@ -25,11 +25,13 @@ Provided by H2ODashboard:
 
 Download the latest `ProjectH2O.zip` from the [Releases](../../releases/latest) and extract it.
 
-Usage is the same as standard TeknoParrot. Add the game to your library, bind your controls and settings, then launch it.
+Usage is the same as standard TeknoParrot. Launch `TeknoParrotUi.exe`. Add H2Overdrive to your library, bind your controls and settings, then launch it.
 
 To use H2ODashboard, simply open `H2ODashboard/H2ODashboard.exe` and it should connect to the game automatically. Further instructions are in the window.
 
 For more information on creating custom H2ODashboard skins, see the documentation in the [H2ODashboard repo](https://github.com/ProjectH2O/H2ODashboard).
+
+To set a custom WR time, edit `H2ODashboard.wr.ini` in a text editor.
 
 ### Screenshots
 
@@ -40,8 +42,6 @@ With H2ODashboard `splits` panel and `speedrun` skin:
 With H2ODashboard `timeattack` panel and `cabinet` skin:
 
 ![Setup 2](media/screenshots/quake1.jpg)
-
-To set a custom WR time, edit `H2ODashboard.wr.ini` in a text editor.
 
 ### Issues
 
