@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2022  # Visual Studio 2022: the v143 C++ toolset OpenParrot is built with
     steps:
       - uses: actions/checkout@v4
 
